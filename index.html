@@ -61,7 +61,7 @@
      layer.bindPopup(feature.properties.Address);
    }
   });
-  var runLayer = omnivore.csv('Data_N.csv', null, customLayer)
+  var runLayer = omnivore.csv('data.csv', null, customLayer)
   .on('ready', function() {
    map.fitBounds(runLayer.getBounds());
   }).addTo(map);
